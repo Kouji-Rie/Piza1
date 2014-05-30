@@ -1,0 +1,2 @@
+serviceClass: pizzashop.client.GreetingService
+path: 7EAB6F9F4A7CCF596DA893DA47D2EF40.gwt.rpc

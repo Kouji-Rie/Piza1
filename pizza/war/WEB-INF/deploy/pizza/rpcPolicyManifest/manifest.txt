@@ -1,0 +1,3 @@
+# Module pizza
+# RPC service class, partial path of RPC policy file
+pizzashop.client.GreetingService, 7EAB6F9F4A7CCF596DA893DA47D2EF40.gwt.rpc

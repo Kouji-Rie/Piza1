@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>pizzashop.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/pizza/greet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>add_linkdata</servlet-name>
+    <servlet-class>pizzashop.addUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>add_linkdata</servlet-name>
+    <url-pattern>/add</url-pattern>
+</servlet-mapping> 
+<servlet>
+    <servlet-name>addm_linkdata</servlet-name>
+    <servlet-class>pizzashop.addMenueServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>addm_linkdata</servlet-name>
+    <url-pattern>/addm</url-pattern>
+</servlet-mapping> 
+<servlet>
+    <servlet-name>edit_linkdata</servlet-name>
+    <servlet-class>pizzashop.editDateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>edit_linkdata</servlet-name>
+    <url-pattern>/edit</url-pattern>
+</servlet-mapping>
+
+  
+  
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list><!-- 最初のページ指定 -->
+
+</web-app>
